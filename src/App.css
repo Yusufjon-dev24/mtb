@@ -1,33 +1,532 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .header-container {
-    width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: white;
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
 
 .case {
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .language {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .subscribe button {
-    padding: 10px 16px;
-    background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+  padding: 10px 16px;
+  background: linear-gradient(90deg, #1e96c8 15.07%, #37aee2 85.96%);
+  color: white;
+  border-radius: 9px;
+  border-color: #1e96c8;
+}
+
+.bars {
+  display: none;
+}
+
+.main-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+.nav {
+  width: 1200px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  margin-top: 30px;
+  border-radius: 7px;
+}
+
+.nav ul {
+  width: 1150px;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+  left: 20px;
+}
+
+.nav ul li {
+  list-style: none;
+}
+
+.banner {
+  margin-top: 20px;
+}
+
+.last-news-text {
+  margin-top: 25px;
+}
+
+.last-news {
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.news-box {
+  width: 77%;
+}
+
+.news-case {
+  width: 66.2%;
+}
+
+.news-case2 {
+  width: 66.2%;
+  margin-top: 20px;
+}
+
+.news-case3 {
+  width: 66.2%;
+}
+
+.news {
+  width: 735px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.news2 {
+  width: 790px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.news-img img {
+  width: 253px;
+  height: 153px;
+  position: relative;
+  top: 3px;
+}
+
+.news-img2 img {
+  width: 253px;
+  height: 153px;
+  position: relative;
+  top: 3px;
+}
+
+.news-img3 img {
+  width: 253px;
+  height: 153px;
+  position: relative;
+  top: 4px;
+}
+
+.news3 {
+  width: 793px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-top: 25px;
+}
+
+.news-btn button {
+  width: 211px;
+  height: 42px;
+  border-radius: 5px;
+  background-color: #295093;
+  border-color: #295093;
+  color: white;
+  margin-top: 30px;
+  position: relative;
+  left: 350px;
+}
+
+.news-box-info {
+  width: 278px;
+  height: 525px;
+  border-radius: 5px;
+  background-color: #f6f6f9;
+}
+
+
+.footer-container {
+  margin: auto;
+  background-color: #295093;
+  border: 1px solid #295093;
+}
+
+.footer-mini-about {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.footer-about2 {
+  width: 830px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 100px;
+  border-radius: 5px;
+  color: white;
+  height: 35px;
+  text-align: center;
+  background-color: #133c82;
+}
+
+.subscribe-btn button {
+  padding: 10px 16px;
+  border-radius: 9px;
+  color: #295093;
+  border-color: white;
+}
+
+.last-info {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  margin-top: 20px;
+  position: relative;
+  right: 85px;
+}
+
+.info-last2 ul li {
+  list-style: none;
+}
+
+.info-last3 ul li {
+  list-style: none;
+}
+
+.line2 {
+  width: 1180px;
+  height: 1.5px;
+  background-color: #133c82;
+  position: relative;
+  left: 160px;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-container {
+    width: 100%;
+    max-width: 768px;
+  }
+
+  .bars {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .banner img {
+    width: 100%;
+    max-width: 768px;
+  }
+
+  .last-news-text {
+    width: 100%;
+    max-width: 768px;
+  }
+
+  .last-news {
+    width: 100%;
+    max-width: 768px;
+    justify-content: space-between;
+  }
+
+  .news-box {
+    width: 60%;
+  }
+
+  .news-box-info {
+    width: 188px;
+    height: 520px;
+    font-size: 13px;
+  }
+
+  .line hr {
+    width: 155px;
+  }
+
+  .news {
+    width: 570px;
+  }
+
+  .news2 {
+    width: 570px;
+  }
+
+  .news3 {
+    width: 570px;
+  }
+
+  .news-case {
+    width: 570px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .news-info {
+    width: 300px;
+    font-size: 11.5px;
+  }
+
+  .news-case2 {
+    width: 570px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .news-info2 {
+    width: 300px;
+    font-size: 11.5px;
+  }
+
+  .news-case3 {
+    width: 570px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .news-info3 {
+    width: 300px;
+    font-size: 11.5px;
+  }
+
+  .news-btn button {
+    width: 130px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: #295093;
+    border-color: #295093;
     color: white;
-    border-radius: 13px;
-    border-color: #1E96C8;
+    margin-top: 30px;
+    position: relative;
+    left: 330px;
+  }
+
+  .footer-mini-about {
+    width: 100%;
+    max-width: 768px;
+    font-size: 13px;
+    justify-content: space-between;
+  }
+
+  .footer-about2 {
+    width: 650px;
+  }
+
+  .footer-logo h1 {
+    font-size: 19px;
+    position: relative;
+    top: 7px;
+  }
+
+  .footer-logo {
+    width: 75px;
+    height: 35px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .subscribe-btn button {
+    padding: 6px 8px;
+    border-radius: 4px;
+  }
+
+  .line2 {
+    width: 765px;
+    position: relative;
+    left: 0;
+  }
+
+  .last-info {
+    width: 768px;
+    font-size: 13px;
+    position: relative;
+    left: -30px;
+  }
+}
+
+@media only screen and (max-width: 375.5px) {
+  .header-container {
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 8px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    width: 60px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  }
+
+  .logo h1 {
+    font-size: 16px;
+    position: static;
+  }
+
+  .case {
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .search {
+    font-size: 14px;
+  }
+
+  .subscribe button {
+    padding: 5px 9px;
+    font-size: 12px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+
+  .main-container {
+    width: 100%;
+    max-width: 375px;
+  }
+
+  .last-news-text {
+    width: 375px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .last-news {
+    width: 375px;
+    display: block;
+  }
+
+  .news {
+    display: block;
+    width: 375px;
+  }
+
+  .news2 {
+    display: block;
+    width: 375px;
+  }
+
+  .news3 {
+    display: block;
+    width: 375px;
+  }
+
+  .news-info {
+    width: 375px;
+    text-align: center;
+  }
+
+   .news-info2 {
+    width: 375px;
+    text-align: center;
+  }
+
+   .news-info3 {
+    width: 375px;
+    text-align: center;
+  }
+
+  .news-btn button {
+    position: relative;
+    left: 120px;
+  }
+
+  .news-img img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .news-img2 img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .news-img3 img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .news-box-info {
+    width: 375px;
+    height: 150px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .box-info34 {
+    display: flex;
+    font-size: 9px;
+    text-align: center;
+    position: relative;
+    top: 15px;
+  }
+
+  .line {
+    display: none;
+  }
 }
