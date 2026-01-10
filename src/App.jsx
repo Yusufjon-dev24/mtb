@@ -300,8 +300,7 @@ function App() {
                 <li>Прислать новость</li>
               </ul>
             </div>
-            <div
-              className="info-last3"
+            <div className="info-last3"
               style={{ position: "relative", bottom: "19px" }}
             >
               <ul>

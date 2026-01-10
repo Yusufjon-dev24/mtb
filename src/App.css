@@ -175,7 +175,6 @@ body {
   background-color: #f6f6f9;
 }
 
-
 .footer-container {
   margin: auto;
   background-color: #295093;
@@ -475,12 +474,12 @@ body {
     text-align: center;
   }
 
-   .news-info2 {
+  .news-info2 {
     width: 375px;
     text-align: center;
   }
 
-   .news-info3 {
+  .news-info3 {
     width: 375px;
     text-align: center;
   }
@@ -528,5 +527,59 @@ body {
 
   .line {
     display: none;
+  }
+
+  .footer-container {
+    width: 100%;
+    max-width: 375px;
+  }
+
+  .footer-mini-about {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .footer-about2 {
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-logo {
+    width: 120px;
+    height: 38px;
+    font-size: 14px;
+  }
+
+  .subscribe-btn button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .last-info {
+    width: 100%;
+    max-width: 375px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+    right: 0;
+    left: 0px;
+  }
+
+  .info-last2 {
+    width: 375px;
+    margin-top: 20px;
+  }
+
+  .info-last3 {
+    width: 375px;
+    margin-top: 40px;
   }
 }
