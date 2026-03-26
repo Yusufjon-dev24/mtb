@@ -24,7 +24,7 @@ const LastNews = () => {
 
     const writeUsBtn = document.getElementById("writeUsBtn");
     const contactForm = document.querySelector(".contact-form");
-    const infoBox = document.querySelector(".contact-info-box"); // новый блок контактов
+    const infoBox = document.querySelector(".contact-info-box");
     const lastNews = document.querySelector(".last-news");
     const lastNewsText = document.querySelector(".last-news-text");
 

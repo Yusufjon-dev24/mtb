@@ -5,7 +5,7 @@ import { faTelegram } from "@fortawesome/free-brands-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import LastNews  from "./page/open";
+import LastNews from "./page/open";
 import rasm1 from "./russ.png";
 import rasm2 from "./nrg-banner.jpg";
 
@@ -34,9 +34,15 @@ function App() {
               <h3>Ru</h3>
             </div>
             <div className="subscribe">
-              <button>
-                <FontAwesomeIcon icon={faTelegram} /> Подписаться
-              </button>
+              <a
+                href="https://t.me/TheTimeImSpending"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>
+                  <FontAwesomeIcon icon={faTelegram} /> Подписаться
+                </button>
+              </a>
             </div>
             <div className="bars">
               <FontAwesomeIcon icon={faBars} />
@@ -76,10 +82,15 @@ function App() {
                 </p>
               </div>
               <div className="subscribe-btn">
-                <button>
-                  {" "}
-                  <FontAwesomeIcon icon={faTelegram} /> Подписатся
-                </button>
+                <a
+                  href="https://t.me/TheTimeImSpending"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>
+                    <FontAwesomeIcon icon={faTelegram} /> Подписатся
+                  </button>
+                </a>
               </div>
             </div>
           </div>
